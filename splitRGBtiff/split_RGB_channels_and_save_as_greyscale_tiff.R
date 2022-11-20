@@ -1,7 +1,7 @@
 library(imager)
 library(raster)
 
-# This script splits RGB channels of tif/tiff images in a folder and save each channel into grayscale tif/tiff with LZW compression.
+# This script splits RGB channels of tif/tiff images in a folder and save each channel into greyscale tif/tiff with LZW compression.
 # Please install "imager" and "raster" R packages.
 # Please install ImageMagick to support tiff processing https://imagemagick.org/script/download.php
 # Please install dependent R Package "spatstat.geom"

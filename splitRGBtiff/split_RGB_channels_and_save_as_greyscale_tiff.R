@@ -1,10 +1,13 @@
-library(imager)
-library(raster)
+# Developed by Sihan Wu lab https://github.com/sihanwusean/sihanwulab, https://github.com/sihanwusean/WuLabScripts
+# Last update: 20221121
 
 # This script splits RGB channels of tif/tiff images in a folder and save each channel into greyscale tif/tiff with LZW compression.
 # Please install "imager" and "raster" R packages.
 # Please install ImageMagick to support tiff processing https://imagemagick.org/script/download.php
-# Please install dependent R Package "spatstat.geom"
+# Please install dependent R Package "spatstat.geom" and "terra"
+
+library(imager)
+library(raster)
 
 ls = list.files(pattern = "*.\\.tif.*$")
 

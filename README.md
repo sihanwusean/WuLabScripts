@@ -12,4 +12,4 @@ This repository is a central hub for sharing bioinformatic scripts developed by 
 An R script to split RGB channels of tif/tiff images in a folder and save each channel into greyscale tif/tiff with LZW compression.
 
 
-<img src="https://github.com/sihanwusean/WuLabScripts/blob/main/splitRGBtiff/example.png" width="60%">
+<img src="https://github.com/sihanwusean/WuLabScripts/blob/main/splitRGBtiff/example.png" width="70%">

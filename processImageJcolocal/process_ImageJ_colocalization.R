@@ -31,7 +31,7 @@ for (i in seq(1, length(ls), 2)) {
   colnames(channel1)[1] = channel1.name
   colnames(channel2)[1] = channel2.name
   join = inner_join(channel1, channel2)
-  join = filter(join, if_all(c(1, 3), ~ . > 0))
+  join = join %>% filter(!(.[[1]] == 0 & .[[3]] == 0))
   # Pearson test and plot density plot
   # Assuming input images are 8-bit with a greyscale of [0, 255]
   pearson = cor.test(unlist(join[,1]), unlist(join[,3]))

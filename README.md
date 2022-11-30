@@ -5,6 +5,18 @@ This repository is a central hub for sharing bioinformatic scripts developed by 
 
 # Table of contents
 
+## Data processing, analysis, and visualization
+
+### :point_right: [MultiwellMapper/multiwell_mapper.R](https://github.com/sihanwusean/WuLabScripts/tree/main/MultiwellMapper)
+
+
+Oftentimes in multi-well experiment, such as cell viability reading in compound screening assay, we obtain data from a micro-plate reader displayed in an Excel sheet organizing data points as in a multi-well plate layout. However, for downstream data analysis, we need to know the sample information of each well. This R script can quickly map data points to corresponding sample information and generate a data analysis-friendly table, which is useful for high-throughput experiment (compound screening, RNAi array screening, etc.). 
+
+
+<img src="https://github.com/sihanwusean/WuLabScripts/blob/main/MultiwellMapper/example.png" width="80%">
+
+
+## Image processing and analysis
 
 ### :point_right: [splitRGBtiff/split_RGB_channels_and_save_as_greyscale_tiff.R](https://github.com/sihanwusean/WuLabScripts/tree/main/splitRGBtiff)
 

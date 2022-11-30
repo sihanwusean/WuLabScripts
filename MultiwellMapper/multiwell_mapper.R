@@ -1,0 +1,6 @@
+map = read.table("map.txt")
+data = read.table("data.txt")
+map = unlist(map)
+data = unlist(data)
+map.data = data.frame(map = map, data = data)
+write.table(map.data, file = "mapped_data.tsv", sep = "\t", row.names = F, quote = F)

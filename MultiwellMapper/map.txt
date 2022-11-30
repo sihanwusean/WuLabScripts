@@ -1,0 +1,8 @@
+											
+	Negative	STD1	STD2	STD3	STD4	STD5	Treatment1	Treatment2	Treatment3		
+	Negative	STD1	STD2	STD3	STD4	STD5	Treatment1	Treatment2	Treatment3		
+	Negative	STD1	STD2	STD3	STD4	STD5	Treatment1	Treatment2	Treatment3		
+	Negative	STD1	STD2	STD3	STD4	STD5	Treatment1	Treatment2	Treatment3		
+	Negative	STD1	STD2	STD3	STD4	STD5	Treatment1	Treatment2	Treatment3		
+											
+											

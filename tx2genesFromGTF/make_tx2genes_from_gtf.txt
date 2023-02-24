@@ -1,0 +1,9 @@
+# Replace the "gencode.v42.annotation.gtf" to your own gtf file. 
+
+awk -F "\t" '$3=="transcript" {print $9}' gencode.v42.annotation.gtf | tr -s ";" " " | cut -d " " -f2,4 | sed 's/\"//g' | awk '{print $2","$1}' > tx_gene.csv
+awk -F "\t" '$3=="transcript" {print $9}' gencode.v42.annotation.gtf | tr -s ";" " " | cut -d " " -f6,8 | sed 's/\"//g' | awk '{print $2","$1}' > symbol_type.csv
+paste -d "," tx_gene.csv symbol_type.csv > tx2genes_gencode.v42.csv
+sed -i -e '1i"transcript_id","gene_id","gene_symbol","gene_type"' tx2genes_gencode.v42.csv
+rm tx_gene.csv symbol_type.csv
+
+# Modified from https://twitter.com/tangming2005

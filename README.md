@@ -34,3 +34,11 @@ An R script to analyze pixel colocalization downstream of ImageJ surface plot ou
 
 
 <img src="https://github.com/sihanwusean/WuLabScripts/blob/main/processImageJcolocal/example.png" width="80%">
+
+
+## NGS related scripts
+
+### :point_right: [tx2genesFromGTF/make_tx2genes_from_gtf.txt](https://github.com/sihanwusean/WuLabScripts/tree/main/tx2genesFromGTF)
+
+
+Simple command lines to make a transcripts-to-genes (tx2genes.csv) mapping file for downstream analysis from a GTF file. This mapping file is usually required for many RNA-seq related analyses, such as in the "tximport" step in the DESeq2 pipeline. This repo contains a pre-made [tx2genes_gencode.v42.csv](https://github.com/sihanwusean/WuLabScripts/tree/main/tx2geneFromGTF/tx2genes_gencode.v42.csv) generated from a human gencode.v42 GTF.

@@ -1,4 +1,4 @@
-# Replace the "gencode.v42.annotation.gtf" to your own gtf file. 
+# Replace the "gencode.v42.annotation.gtf" with your own gtf file. 
 
 awk -F "\t" '$3=="transcript" {print $9}' gencode.v42.annotation.gtf | tr -s ";" " " | cut -d " " -f2,4 | sed 's/\"//g' | awk '{print $2","$1}' > tx_gene.csv
 awk -F "\t" '$3=="transcript" {print $9}' gencode.v42.annotation.gtf | tr -s ";" " " | cut -d " " -f6,8 | sed 's/\"//g' | awk '{print $2","$1}' > symbol_type.csv
